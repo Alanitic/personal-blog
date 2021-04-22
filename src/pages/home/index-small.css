@@ -1,36 +1,35 @@
+/* === GLOBAL === */
 .container {
   display: grid;
+  min-height: 100vh;
   grid-gap: 1vh;
   grid-template-columns: 1fr;
-  grid-template-areas: "search" "navbar" "hd" "menu" "main" "ft";
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-areas: "search" "navbar" "hd" "main" "ft";
   /* border: 2px solid yellow; */
-}
-
-.search-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-  /* width: 100%;
-  border: 1px solid red; */
 }
 
 .box {
   display: flex;
   flex-direction: row;
   justify-content: start;
-
-  /* width: 100%;
-  border: 1px solid red; */
+  /* width: 100%; */
+  /* border: 1px solid red; */
 }
 
-button {
-  background: none;
-  border: none;
+/* === SEARCH === */
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  /* width: 100%; */
+  /* border: 1px solid red; */
 }
 
-button:hover {
-  color: salmon;
+.search {
+  grid-area: search;
 }
 
 input {
@@ -43,13 +42,23 @@ input:focus {
 input::placeholder {
   font-family: Lora, "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
 }
-.search {
-  grid-area: search;
+
+/* === NAVBAR === */
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover {
+  color: salmon;
 }
 
 .navbar {
   grid-area: navbar;
 }
+
+/* === HEADER === */
 
 .header {
   grid-area: hd;
@@ -58,23 +67,18 @@ input::placeholder {
   height: 20vh;
 }
 
-.footer {
-  grid-area: ft;
-}
-.feature {
-  grid-area: feat;
-}
+/* === MAIN === */
+
 .content {
+  display: flex;
+  flex-direction: column;
   grid-area: main;
 }
 
 .card {
   margin: 0 auto;
-  padding: 1vh;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  padding: 10px;
+  margin: 20px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
   border-radius: 20px;
 }
@@ -93,11 +97,6 @@ input::placeholder {
   justify-content: stretch;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-}
-
 a {
   border-radius: 5px;
   border: 1px solid black;
@@ -109,4 +108,12 @@ a {
 
 a:hover {
   background: black;
+}
+
+/* === FOOTER === */
+.footer {
+  grid-area: ft;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
 }
