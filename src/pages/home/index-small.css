@@ -9,14 +9,6 @@
   /* border: 2px solid yellow; */
 }
 
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  /* width: 100%; */
-  /* border: 1px solid red; */
-}
-
 /* === SEARCH === */
 
 .search-box {
