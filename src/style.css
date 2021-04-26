@@ -1,6 +1,7 @@
 @import url("./pages/home/index-small.css");
 @import url("./pages/home/index-medium.css");
 @import url("./pages/home/index-large.css");
+@import url("./pages/home/index-ex-large.css");
 
 body {
   margin: 0%;
