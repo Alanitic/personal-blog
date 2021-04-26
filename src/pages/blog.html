@@ -20,16 +20,16 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="search search-box">
+    <main class="container">
+      <header class="search search-box">
         <input type="text" placeholder="Search and hit enter..." />
         <i class="fas fa-search"></i>
-      </div>
-      <div class="navbar">
+      </header>
+      <section class="navbar">
         <button onclick="location.href='./index.html'">Home</button>
-      </div>
+      </section>
 
-      <div class="content">
+      <section class="content">
         <section class="text-card">
           <article>
             <h1>Post 1</h1>
@@ -39,10 +39,14 @@
               veniam. Mollit et exercitation sint sint labore dolore labore
               nostrud.
             </p>
-            <img
-              class="post-img"
-              src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            />
+            <figure>
+              <img
+                class="post-img"
+                alt="egg sandwitch with spinach"
+                src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              />
+              <figcaption>Fig.1 - Egg sandwitch.</figcaption>
+            </figure>
             <p class="post-content">
               Adipisicing sunt proident eu dolor eiusmod cupidatat enim ex
               laborum sunt et velit sit dolor. Dolor eiusmod quis est labore
@@ -64,16 +68,26 @@
             </p>
           </article>
         </section>
-      </div>
+      </section>
 
-      <div class="about">
+      <section class="about">
         <section class="text-card">
-          <h1>About me</h1>
+          <h2>About me</h2>
           <p class="post-content"></p>
-          <img
-            class="post-img"
-            src="https://images.pexels.com/photos/3786748/pexels-photo-3786748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-          />
+          <figure>
+            <img
+              class="post-img"
+              src="https://images.pexels.com/photos/3786748/pexels-photo-3786748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <figcaption>Fig.2 - Me, reading.</figcaption>
+          </figure>
+          <p class="post-content">
+            <b>Name:</b> Author's name
+            <br />
+            <b>Title:</b> Author's title
+            <br />
+            <b>Company:</b> Author's company
+          </p>
           <p class="post-content">
             Fugiat sit anim ut sunt ad eiusmod. Pariatur tempor adipisicing
             reprehenderit anim reprehenderit sit aute deserunt Lorem.
@@ -83,10 +97,22 @@
             Cupidatat aliqua culpa est magna anim incididunt labore ea
             incididunt voluptate esse.
           </p>
+          <q cite="https://www.berries.com/blog/positive-quotes">
+            Start before you are ready
+          </q>
         </section>
-      </div>
+        <section class="text-card">
+          <h2>Find me on</h2>
+          <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </section>
+      </section>
 
-      <div class="footer">Copyright 2021</div>
-    </div>
+      <footer class="footer">Copyright 2021</footer>
+    </main>
   </body>
 </html>
