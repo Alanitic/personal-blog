@@ -4,8 +4,8 @@
   min-height: 100vh;
   grid-gap: 1vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-areas: "search" "navbar" "main" "ft";
+  grid-template-rows: auto auto 1fr auto auto;
+  grid-template-areas: "search" "navbar" "main" "about" "ft";
   /* border: 2px solid yellow; */
 }
 
@@ -81,6 +81,10 @@ button:hover {
 
 .post-img {
   max-width: 100%;
+}
+
+.about {
+  grid-area: about;
 }
 
 /* === FOOTER === */

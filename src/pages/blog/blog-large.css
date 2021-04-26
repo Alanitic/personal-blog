@@ -1,10 +1,9 @@
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 901px) and (max-width: 1024px) {
   .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "navbar search" "main about" "ft ft";
   }
-
   .text-card {
     margin: 2vh 2vw;
   }
