@@ -1,4 +1,4 @@
-@media (min-width: 901px) and (max-width: 1024px) {
+@media (min-width: 901px) {
   .container {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr auto;
@@ -6,5 +6,9 @@
   }
   .text-card {
     margin: 2vh 2vw;
+    padding: 1vh 2vw;
+  }
+  .post-img {
+    max-height: 50vh;
   }
 }
